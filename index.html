@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <script src="./src/js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="./src/js/jquery.inview.min.js"></script>
+  <title>Shoma Yamamoto</title>
+</head>
+<body>
+  <header class="top-page-head">
+    <div class="HEADER">
+      <div class="LOGO">
+        <a class="logo" href="/">
+          <img src="./src/img/assets/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="menu">
+        <img src="./src/img/assets/menu-close.svg" alt="">
+      </div>
+    </div>
+  </header>
 
+  <div id="container">
+    <div class="noise"></div>
+    <div class="content content-01">
+      <ul class="content-menu">
+        <li href="/">
+          <span>C</span>
+          <span>O</span>
+          <span>N</span>
+          <span>C</span>
+          <span>E</span>
+          <span>P</span>
+          <span>T</span>
+        </li>
+        <li href="/">
+          <span>W</span>
+          <span>H</span>
+          <span>O</span>
+          <span>&nbsp;</span>
+          <span>I</span>
+          <span>&nbsp;</span>
+          <span>A</span>
+          <span>M</span>
+        </li>
+        <li href="/">
+          <span>W</span>
+          <span>O</span>
+          <span>R</span>
+          <span>K</span>
+          <span>S</span>
+        </li>
+        <li href="/">
+          <span>C</span>
+          <span>O</span>
+          <span>N</span>
+          <span>T</span>
+          <span>A</span>
+          <span>C</span>
+          <span>T</span>
+        </li>
+      </ul>
+    </div>
+    <div class="content content-02"></div>
+    <div class="content content-03"></div>
+  </div>
+
+  <script>
+    (function($) {
+    $('.content-menu').on('inview', function(){
+     $(this).addClass('anim');
+    });
+    })( jQuery );
+  </script>
+
+</body>
+</html>
