@@ -32,25 +32,36 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   height: 300vh;
 }
 
-.content{
-  width: 100vw;
-  height: 100vh;
-}
-
-.content-01{
+.content-01 , .content-03{
   display: flex;
   align-items: center;
   padding: 60px;
   background: #181818;
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  margin: auto;
+}
+
+.content-02{
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
 }
 
 .content-menu {
   height: auto;
+  position: absolute;
+  z-index: 1;
+}
+
+.content-menu a{
+  text-decoration: none;
 }
 
 .content-01 .content-menu li {
   display: flex;
-  height: auto;
+  height: 100px;
   color: #ffffff;
   list-style: none;
   font-family: 'AJensonPro-Regular';
@@ -62,11 +73,15 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 .content-menu span {
   display: block;
   transform: translate(0, 105%);
-  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s;
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.4s;
 }
 
 .content-menu.anim span {
   transform: translate(0, 0);
+}
+.content-menu.anim li:hover {
+  font-family: 'AJensonPro-Bold';
+  font-weight: 700;
 }
 
 .content-menu span:nth-child(2) {
@@ -131,7 +146,9 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1440px;
     height: 100%;
+    margin: auto;
     padding: 42px 60px;
   }
 

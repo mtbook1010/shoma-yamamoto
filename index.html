@@ -8,6 +8,7 @@
   <script src="./src/js/index.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="./src/js/jquery.inview.min.js"></script>
+  <script src="./src/js/luxy.js"></script>
   <title>Shoma Yamamoto</title>
 </head>
 <body>
@@ -24,45 +25,53 @@
     </div>
   </header>
 
-  <div id="container">
+  <div id="luxy">
     <div class="noise"></div>
     <div class="content content-01">
-      <ul class="content-menu">
-        <li href="/">
-          <span>C</span>
-          <span>O</span>
-          <span>N</span>
-          <span>C</span>
-          <span>E</span>
-          <span>P</span>
-          <span>T</span>
-        </li>
-        <li href="/">
-          <span>W</span>
-          <span>H</span>
-          <span>O</span>
-          <span>&nbsp;</span>
-          <span>I</span>
-          <span>&nbsp;</span>
-          <span>A</span>
-          <span>M</span>
-        </li>
-        <li href="/">
-          <span>W</span>
-          <span>O</span>
-          <span>R</span>
-          <span>K</span>
-          <span>S</span>
-        </li>
-        <li href="/">
-          <span>C</span>
-          <span>O</span>
-          <span>N</span>
-          <span>T</span>
-          <span>A</span>
-          <span>C</span>
-          <span>T</span>
-        </li>
+      <ul class="content-menu luxy-el" data-speed-y="15">
+        <a href="">
+          <li class="content-menu-concept">
+            <span>C</span>
+            <span>O</span>
+            <span>N</span>
+            <span>C</span>
+            <span>E</span>
+            <span>P</span>
+            <span>T</span>
+          </li>
+        </a>
+        <a href="/">
+          <li class="content-menu-whoiam">
+            <span>W</span>
+            <span>H</span>
+            <span>O</span>
+            <span>&nbsp;</span>
+            <span>I</span>
+            <span>&nbsp;</span>
+            <span>A</span>
+            <span>M</span>
+          </li>
+        </a>
+        <a href="/">
+          <li class="content-menu-works">
+            <span>W</span>
+            <span>O</span>
+            <span>R</span>
+            <span>K</span>
+            <span>S</span>
+          </li>
+        </a>
+        <a href="/">
+          <li class="content-menu-contact">
+            <span>C</span>
+            <span>O</span>
+            <span>N</span>
+            <span>T</span>
+            <span>A</span>
+            <span>C</span>
+            <span>T</span>
+          </li>
+        </a>
       </ul>
     </div>
     <div class="content content-02"></div>
@@ -75,6 +84,14 @@
      $(this).addClass('anim');
     });
     })( jQuery );
+  </script>
+
+  <script charset="utf-8">
+    luxy.init({
+    wrapper: '#luxy',
+    targets : '.luxy-el',
+    wrapperSpeed:  0.08
+  });
   </script>
 
 </body>
