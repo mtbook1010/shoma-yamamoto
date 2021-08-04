@@ -61,12 +61,12 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 
 .content-01 .content-menu li {
   display: flex;
-  height: 100px;
+  height: 12vh;
   color: #ffffff;
   list-style: none;
   font-family: 'AJensonPro-Regular';
   font-weight: 400;
-  font-size: 80px;
+  font-size: 10vh;
   overflow: hidden;
 }
 
