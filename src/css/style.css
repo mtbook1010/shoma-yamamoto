@@ -158,10 +158,12 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 
   .logo img{
     width: 100%;
+    height: auto;
   }
 
-  .menu{
-
+  .menu img{
+    width: 53px;
+    height: 53px;
   }
   
 }
