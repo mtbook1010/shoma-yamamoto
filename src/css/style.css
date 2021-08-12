@@ -153,9 +153,6 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 .content-menu-concept span:nth-child(23) {
   transition-delay: 0.96s;
 }
-.content-menu-concept-desc span:nth-child(2) {
-  transition-delay: 1.48s;
-}
 
 .polish{
   color: #dfe200;
