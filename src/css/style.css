@@ -172,7 +172,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 }
 
 .content-02{
-  background: #fffde8;
+  background: #181818;
 }
 
 .content-03{
@@ -202,7 +202,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     width: 40px;
   }
 
-  .logo img{
+  .logo{
     width: 100%;
     height: auto;
   }
@@ -244,7 +244,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     width: 65px;
   }
 
-  .logo img{
+  .logo{
     width: 100%;
     height: auto;
   }
@@ -257,7 +257,8 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   .desc{
     margin: auto;
     margin-top: 20px;
-    font-size: 32px;
+    padding-left: 20px;
+    font-size: min(5vw,42px);
     font-family: YuMincho, 'Yu Mincho', serif;
   }
   
@@ -270,8 +271,8 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   width: 100vw;
   height: 300vh;
   background: url(../img/noise.png);
-  animation: noise_anima 1s steps(10) infinite;
-  z-index: 1;
+  animation: noise_anima 1s steps(12) infinite;
+  z-index: 999;
 }
 
 @keyframes noise_anima {

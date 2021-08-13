@@ -17,8 +17,8 @@
   <header class="top-page-head">
     <div class="HEADER">
       <div class="LOGO">
-        <a class="logo" href="/">
-          <img src="./src/img/assets/logo.svg" alt="">
+        <a href="/">
+          <img class="logo js-header -before" src="./src/img/assets/logo-before.svg" alt="">
         </a>
       </div>
       <div class="menu">
@@ -77,11 +77,21 @@
   </script>
 
   <script charset="utf-8">
-    luxy.init({
+  if (matchMedia('only screen and (max-width: 699px)').matches) {
+  //スマホ・タブレットの時の処理
+  luxy.init({
+    wrapper: '#luxy',
+    targets : '.luxy-el',
+    wrapperSpeed:  0.1
+  });
+  }else{
+  //PCの時の処理
+  luxy.init({
     wrapper: '#luxy',
     targets : '.luxy-el',
     wrapperSpeed:  0.07
   });
+  }
   </script>
 
 </body>
