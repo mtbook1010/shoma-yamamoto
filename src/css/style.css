@@ -271,6 +271,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   width: 100vw;
   height: 300vh;
   background: url(../img/noise.png);
+  opacity: 0.5;
   animation: noise_anima 1s steps(12) infinite;
   z-index: 999;
 }
