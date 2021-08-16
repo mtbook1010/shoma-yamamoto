@@ -76,16 +76,15 @@
     })( jQuery );
   </script>
 
-<script>
-  (function($) {
-  $('.top-page-head').on('inview', function(){
-   $(this).addClass('anim');
-  });
-  })( jQuery );
-</script>
+  <script>
+    (function($) {
+    $('.top-page-head').on('inview', function(){
+    $(this).addClass('anim');
+    });
+    })( jQuery );
+  </script>
 
   <script charset="utf-8">
-
   if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0) {
     // スマートフォン向けの記述
   } else if (navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0) {
@@ -98,7 +97,17 @@
     wrapperSpeed:  0.07
   });
   }
+  </script>
 
+  <script>
+  $(document).ready(function(){
+  var hSize = $(window).height();
+  $('.mainvisual').height(hSize); // アドレスバーを除いたサイズを付与
+  });
+  $(window).resize(function(){ // ページをリサイズした時の処理
+  var hSize = $(window).height();
+  $('.mainvisual').height(hSize); // アドレスバーを除いたサイズを付与
+  });
   </script>
 
 </body>

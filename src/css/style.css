@@ -40,7 +40,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   background: #181818;
   width: 100%;
   max-width: 1440px;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   margin: auto;
 }
 
