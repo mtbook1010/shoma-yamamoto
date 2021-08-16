@@ -30,7 +30,7 @@
   <div id="luxy">
     <div class="noise"></div>
     <div class="content content-01">
-      <ul class="content-menu luxy-el" data-speed-y="6">
+      <ul class="content-menu luxy-el" data-speed-y="4">
           <li class="content-menu-concept">
             <span>N</span>
             <span>o</span>
@@ -75,6 +75,14 @@
     });
     })( jQuery );
   </script>
+
+<script>
+  (function($) {
+  $('.top-page-head').on('inview', function(){
+   $(this).addClass('anim');
+  });
+  })( jQuery );
+</script>
 
   <script charset="utf-8">
   if (matchMedia('only screen and (max-width: 699px)').matches) {

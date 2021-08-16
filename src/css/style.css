@@ -32,7 +32,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   height: 300vh;
 }
 
-.content-01 , .content-03{
+.content-01{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,6 +48,14 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   width: 100vw;
   height: 100vh;
   margin: auto;
+  background: #fffde8;
+}
+
+.content-03{
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background: #181818; 
 }
 
 .content-menu {
@@ -157,6 +165,17 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   transition-delay: 2.42s;
 }
 
+.top-page-head {
+  display: block;
+  transform: translate(0, -80%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.4s;
+  transition-delay: 3s;
+}
+
+.top-page-head.anim {
+  transform: translate(0, 0);
+}
+
 .polish{
   color: #dfe200;
 }
@@ -171,19 +190,13 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   width: 80%;
 }
 
-.content-02{
-  background: #181818;
-}
-
-.content-03{
-  background: #181818;
-}
+/*------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 699px) {
   .top-page-head{
     position: fixed;
     width: 100vw;
-    height: 120px;
+    height: auto;
     z-index: 999;
   }
 
@@ -225,7 +238,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   .top-page-head{
     position: fixed;
     width: 100vw;
-    height: 155px;
+    height: auto;
     z-index: 999;
   }
 
@@ -241,7 +254,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
 
   .LOGO{
-    width: 65px;
+    width: 50px;
   }
 
   .logo{
@@ -250,15 +263,15 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
 
   .menu img{
-    width: 53px;
-    height: 53px;
+    width: 50px;
+    height: 50px;
   }
 
   .desc{
     margin: auto;
     margin-top: 20px;
     padding-left: 20px;
-    font-size: min(5vw,42px);
+    font-size: min(4vw,42px);
     font-family: YuMincho, 'Yu Mincho', serif;
   }
   
@@ -271,7 +284,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   width: 100vw;
   height: 300vh;
   background: url(../img/noise.png);
-  opacity: 0.5;
+  opacity: 0.7;
   animation: noise_anima 1s steps(12) infinite;
   z-index: 999;
 }
