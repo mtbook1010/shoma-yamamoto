@@ -279,8 +279,12 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   .content-02{
     display: flex;
     width: 100%;
-    max-width: 1440px;
     padding: 42px 60px;
+  }
+
+  .content-max-width{
+    display: flex;
+    max-width: 1440px;
   }
 
   .content-02-divide{
