@@ -278,6 +278,8 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 
   .content-02{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 42px 60px;
   }
