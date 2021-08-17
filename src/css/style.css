@@ -229,7 +229,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     margin: auto;
     margin-top: 20px;
     font-size: max(5vw,17px);
-    font-family: serif;
+    font-family: "Noto Serif JP",serif;
   }
 }
 
@@ -272,7 +272,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     margin-top: 20px;
     padding-left: 20px;
     font-size: min(4vw,38px);
-    font-family: serif;
+    font-family: "Noto Serif JP",serif;
     letter-spacing: 0.1em;
   }
 
@@ -316,7 +316,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
 
   .title-box .title-ja{
-    font-family: serif;
+    font-family: "Noto Serif JP",serif;
     font-weight: 400;
     font-size: min(4vw, 36px);
     margin-bottom: min(2vw, 16px);
@@ -331,7 +331,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
 
   .desc-box .desc-ja{
-    font-family: serif;
+    font-family: "Noto Serif JP",serif;
     font-weight: normal;
     font-size: 14px;
     color: #323232;
