@@ -24,7 +24,7 @@
   src: url('../font/SilkSerif/SilkSerif-LightItalic.ttf') format('truetype')
 }
 body{
-  background: #181818;
+  background: #121212;
   overscroll-behavior-y: none;
   -ms-overflow-style: none;    /* IE, Edge 対応 */
   scrollbar-width: none;       /* Firefox 対応 */
@@ -41,7 +41,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   align-items: center;
   justify-content: center;
   padding: 60px;
-  background: #181818;
+  background: #121212;
   width: 100%;
   max-width: 1440px;
   height: calc(var(--vh, 1vh) * 100);
@@ -49,7 +49,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 }
 .content-02{
   width: 100vw;
-  height: 100vh;
+  height: auto;
   margin: auto;
   background: #fffde8;
 }
@@ -57,7 +57,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   width: 100vw;
   height: 100vh;
   margin: auto;
-  background: #181818; 
+  background: #121212; 
 }
 .content-menu {
   position: relative;
@@ -214,10 +214,95 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     width: 120%;
   }
   .desc{
-    margin: auto;
     margin-top: 20px;
     font-size: max(5vw,17px);
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  }
+  .content-02,.content-03{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 42px 60px;
+  }
+  .content-max-width{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 1440px;
+  }
+  .content-02-divide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .content-02-left{
+    margin: 50px 0;
+  }
+  .content-02-left img{
+    width: 100%;
+    max-width: 500px;
+  }
+  .content-02-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .content-02-right-box{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .title-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: min(2vw, 16px);
+  }
+  .title-box .title-en{
+    font-family: 'SilkSerif-ExtraLight';
+    font-size: 24px;
+  }
+  .title-box .title-ja{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+  }
+  .desc-box{
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+  .desc-box .desc-ja{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: #323232;
+    line-height: 1.9;
+    letter-spacing: 0.1em;
+  }
+  .swiper-container{
+    max-width: 1440px;
+  }
+  .swiper-button-wrapper{
+    position: relative;
+    width: 100px;
+    height: 20px;
+    margin-top: 40px;
+    float: right;
+  }
+  .swiper-button {
+    position: absolute;
+    right: 0px;
+    width: 100px;
+  }
+  .swiper-button * {
+    --swiper-navigation-size: 20px;
   }
 }
 
@@ -254,13 +339,12 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     position: relative;
     right: 0;
   }
-
   .rhombus img{
     width: 100%;
   }
   .desc{
     margin-top: 20px;
-    font-size: min(2.2vw,38px);
+    font-size: min(2.2vw,28px);
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-weight: 200;
     letter-spacing: 0.1em;
@@ -274,15 +358,22 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
   .content-max-width{
     display: flex;
+    flex-flow: column;
+    width: 100%;
     max-width: 1440px;
   }
   .content-02-divide{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
+  }
+  .content-02-left{
+    margin: 50px 0;
   }
   .content-02-left img{
     width: 100%;
+    max-width: 500px;
     padding-right: 80px;
   }
   .content-02-right{
@@ -314,7 +405,6 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     line-height: 1.2;
     letter-spacing: 0.1em;
   }
-
   .desc-box{
     width: 100%;
     margin-top: 20px;
@@ -333,8 +423,10 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
   .swiper-button-wrapper{
     position: relative;
-    width: 100%;
+    width: 100px;
     height: 20px;
+    margin-top: 40px;
+    float: right;
   }
   .swiper-button {
     position: absolute;
@@ -365,7 +457,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 .swiper-button *{
   display: block !important;
   position: relative !important;
-  --swiper-theme-color: #181818;
+  --swiper-theme-color: #121212;
 }
 
 .noise{
