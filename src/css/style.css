@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 @font-face {
   font-family: 'AJensonPro-Bold';
@@ -210,6 +209,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   .rhombus{
     position: absolute;
     right: 0;
+    overflow-x: hidden;
   }
   .rhombus img{
     width: 120%;
