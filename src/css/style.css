@@ -215,7 +215,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
   .desc{
     margin-top: 20px;
-    font-size: max(5vw,17px);
+    font-size: 14px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   }
   .content-02,.content-03{
