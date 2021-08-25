@@ -70,16 +70,6 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 .content-menu a{
   text-decoration: none;
 }
-.content-01 .content-menu li {
-  display: flex;
-  height: auto;
-  color: #ffffff;
-  list-style: none;
-  font-family: 'SilkSerif-ExtraLight';
-  font-weight: 400;
-  font-size: min(10vw, 146px);
-  overflow: hidden;
-}
 .polish{
   color: #dfe200;
 }
@@ -214,6 +204,16 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   .rhombus img{
     width: 120%;
   }
+  .content-01 .content-menu li {
+    display: flex;
+    height: auto;
+    color: #ffffff;
+    list-style: none;
+    font-family: 'SilkSerif-ExtraLight';
+    font-weight: 400;
+    font-size: max(8vw, 42px);
+    overflow: hidden;
+  }
   .desc{
     margin-top: 20px;
     font-size: 14px;
@@ -227,7 +227,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 42px 60px;
+    padding: 42px 30px;
   }
   .content-max-width{
     display: flex;
@@ -345,6 +345,16 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
   .rhombus img{
     width: 100%;
+  }
+  .content-01 .content-menu li {
+    display: flex;
+    height: auto;
+    color: #ffffff;
+    list-style: none;
+    font-family: 'SilkSerif-ExtraLight';
+    font-weight: 400;
+    font-size: min(10vw, 146px);
+    overflow: hidden;
   }
   .desc{
     margin-top: 20px;
