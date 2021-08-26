@@ -328,6 +328,8 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
   .swiper-button * {
     --swiper-navigation-size: 20px;
+    width: auto !important;
+    right: 0 !important;
   }
 }
 
