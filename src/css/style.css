@@ -23,6 +23,10 @@
   font-family: 'SilkSerif-LightItalic';
   src: url('../font/SilkSerif/SilkSerif-LightItalic.ttf') format('truetype')
 }
+@font-face {
+  font-family: 'VisueltPro-Light';
+  src: url('../font/VisueltPro/VisueltPro-Light.ttf') format('truetype')
+}
 body{
   background: #121212;
   overscroll-behavior-y: none;
@@ -536,6 +540,12 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   .content-works-title{
     font-family: 'SilkSerif-ExtraLight';
     font-size: 42px;
+  }
+  .content-works-desc{
+    font-family: 'VisueltPro-Light';
+    font-size: 13px;
+    line-height: 1.9;
+    letter-spacing: 0.1em;
   }
 }
 
