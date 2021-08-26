@@ -187,11 +187,28 @@
     })(jQuery);
   </script>
   <script charset="utf-8">
+    if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0) {
+      // スマートフォン向けの記述
+      luxy.init({
+        wrapper: '#luxy',
+        targets: '.luxy-el',
+        wrapperSpeed: 0.1
+      });
+    } else if (navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+      // タブレット向けの記述
+      luxy.init({
+        wrapper: '#luxy',
+        targets: '.luxy-el',
+        wrapperSpeed: 0.1
+      });
+    } else {
+      // PC向けの記述
       luxy.init({
         wrapper: '#luxy',
         targets: '.luxy-el',
         wrapperSpeed: 0.07
       });
+    }
   </script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
