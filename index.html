@@ -152,7 +152,25 @@
         </div>
       </div>
     </div>
-    <div class="content content-03"></div>
+    <div class="content content-03">
+      <div class="content-max-width">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>AAAAA</p>
+            </div>
+            <div class="swiper-slide">
+              <p>BBBBB</p>
+            </div>
+            <div class="swiper-slide">
+              <p>CCCCC</p>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <script>
     (function ($) {
@@ -169,24 +187,17 @@
     })(jQuery);
   </script>
   <script charset="utf-8">
-    if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0) {
-      // スマートフォン向けの記述
-    } else if (navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-      // タブレット向けの記述
-    } else {
-      // PC向けの記述
       luxy.init({
         wrapper: '#luxy',
         targets: '.luxy-el',
         wrapperSpeed: 0.07
       });
-    }
   </script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     let mySwiper = new Swiper('.swiper-container', {
       // 以下にオプションを設定
-      loop: true, //最後に達したら先頭に戻る
+      loop: false, //最後に達したら先頭に戻る
       speed: 1000,
       effect: 'fade',
       fadeEffect: {

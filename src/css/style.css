@@ -228,13 +228,31 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 42px 30px;
+    padding: 0px 30px;
   }
-  .content-max-width{
+  .content-title {
+    position: relative;
+    width: 100vw;
+    margin-top: -2vw;
+  }
+  .content-title p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'SilkSerif-ExtraLight';
+    font-size: min(10vw, 146px);
+    height: auto;
+    white-space: nowrap;
+    color: #121212;
+  }
+  .content-02 .content-max-width{
     display: flex;
     flex-flow: column;
     width: 100%;
     max-width: 1440px;
+    border: solid #12121215;
+    border-width: 0px 1px 0px 1px;
   }
   .content-02-divide{
     display: flex;
@@ -248,6 +266,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   .content-02-left img{
     width: 100%;
     max-width: 500px;
+    margin-top: 10vw;
   }
   .content-02-right{
     display: flex;
@@ -346,6 +365,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
   .rhombus img{
     width: 60vw;
+    opacity: 0.15;
   }
   .content-01 .content-menu li {
     display: flex;
@@ -387,7 +407,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     white-space: nowrap;
     color: #121212;
   }
-  .content-max-width{
+  .content-02 .content-max-width{
     display: flex;
     flex-flow: column;
     width: 100%;
@@ -469,6 +489,16 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
   .swiper-button * {
     --swiper-navigation-size: 20px;
+    width: auto !important;
+    right: 0 !important;
+  }
+  .content-03 .content-max-width{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 1440px;
+    border: solid #FFFFFF15;
+    border-width: 0px 1px 0px 1px;
   }
 }
 
