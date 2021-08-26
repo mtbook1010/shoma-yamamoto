@@ -546,6 +546,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     font-size: 13px;
     line-height: 1.9;
     letter-spacing: 0.1em;
+    opacity: 0.4;
   }
 }
 
