@@ -41,7 +41,6 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   align-items: center;
   justify-content: center;
   padding: 60px;
-  background: #121212;
   width: 100%;
   max-width: 1440px;
   height: calc(var(--vh, 1vh) * 100);
@@ -341,11 +340,12 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     height: 50px;
   }
   .rhombus{
-    position: relative;
-    right: 0;
+    position: absolute;
+    right: -2vw;
+    z-index: -1;
   }
   .rhombus img{
-    width: 100%;
+    width: 60vw;
   }
   .content-01 .content-menu li {
     display: flex;
@@ -402,7 +402,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     width: 100%;
   }
   .content-02-left{
-    margin-top: min(14vw,220px);
+    margin-top: min(16vw,240px);
     margin-bottom: 50px;
   }
   .content-02-left img{
@@ -499,7 +499,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   top: 0px;
   left: 0px;
   width: 100vw;
-  height: 300vh;
+  height: 100%;
   background: url(../img/noise.png);
   animation: noise_anima 1s steps(12) infinite;
   z-index: 1;
