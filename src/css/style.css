@@ -405,7 +405,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   .content-title {
     position: relative;
     width: 100vw;
-    margin-top: max(-2.8vw,-41px);
+    margin-top: max(-2.9vw,-41px);
   }
   .content-02 .content-title p{
     position: absolute;
