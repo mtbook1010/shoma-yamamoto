@@ -539,7 +539,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     max-width: 1440px;
     height: 100%;
     border: solid #FFFFFF15;
-    border-width: 0px 1px 0px 1px;
+    border-width: 1px 1px 0px 1px;
     padding-bottom: min(16vw,240px);
   }
   .content-works-container{
@@ -547,7 +547,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     height: auto;
     padding: 30px 0px;
     border: solid #FFFFFF15;
-    border-width: 1px 0px 1px 0px;
+    border-width: 0px 0px 1px 0px;
     color: #ffffff;
   }
   .content-works-title{
@@ -593,7 +593,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   height: 100%;
   background: url(../img/noise.png);
   animation: noise_anima 1s steps(12) infinite;
-  z-index: 1;
+  z-index: 2;
   opacity: 0.5;
 }
 @keyframes noise_anima {
