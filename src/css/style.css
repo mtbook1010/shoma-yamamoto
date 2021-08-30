@@ -374,9 +374,15 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     position: absolute;
     width: auto;
     z-index: -1;
+    padding: 60px;
+  }
+  #sphere .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #sphere img{
-    width: 85vw;
+    width: 80vw;
   }
   .content-01 .content-menu li {
     display: flex;
@@ -435,6 +441,9 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   .content-02-left{
     margin-top: min(16vw,240px);
     margin-bottom: 50px;
+  }
+  .content-02 .swiper-wrapper{
+    max-width: 500px;
   }
   .content-02-left img{
     width: 100%;
