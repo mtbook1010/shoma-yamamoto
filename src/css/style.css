@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+  }
 @font-face {
   font-family: 'AJensonPro-Bold';
   font-style: normal;
@@ -239,7 +242,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   .content-title {
     position: relative;
     width: 100vw;
-    margin-top: -2vw;
+    margin-top: -5vw;
   }
   .content-title p{
     position: absolute;
@@ -247,7 +250,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     left: 0;
     width: 100%;
     font-family: 'SilkSerif-ExtraLight';
-    font-size: min(10vw, 146px);
+    font-size: 18vw;
     height: auto;
     white-space: nowrap;
     color: #121212;
@@ -267,7 +270,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     width: 100%;
   }
   .content-02-left{
-    margin: 50px 0;
+    margin: 80px 0;
   }
   .content-02-left img{
     width: 100%;
@@ -402,7 +405,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   .content-title {
     position: relative;
     width: 100vw;
-    margin-top: max(-2.4vw,-34px);
+    margin-top: max(-2.8vw,-41px);
   }
   .content-02 .content-title p{
     position: absolute;
