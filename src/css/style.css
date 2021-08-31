@@ -561,6 +561,24 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     letter-spacing: 0.1em;
     opacity: 0.4;
   }
+  .rhombus-button-box{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+  }
+  .rhombus-button{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'SilkSerif-ExtraLight';
+    padding-top: 4px;
+    background: none;
+    border: solid #121212 1px;
+  }
 }
 
 .content-menu-concept-br {
