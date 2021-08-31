@@ -59,7 +59,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   width: 100vw;
   height: auto;
   margin: auto;
-  background: #fffde8;
+  background: #fffde8b3;
 }
 .content-03{
   width: 100vw;
