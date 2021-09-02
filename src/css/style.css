@@ -62,6 +62,8 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   background: rgb(255,252,218);
   background: linear-gradient(135deg, rgba(255,252,218,0.7) 0%, rgba(255,255,255,0.7) 100%);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  
 }
 .content-03{
   width: 100vw;
