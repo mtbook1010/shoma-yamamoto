@@ -110,8 +110,9 @@
               <div class="swiper-slide">
                 <img src="./src/img/assets/spring.png">
               </div>
-              <div class="swiper-slide rhombus-2">
-                <img src="./src/img/assets/rhombus-2.png">
+              <div class="swiper-slide rhombus-switch">
+                <img src="./src/img/assets/rhombus-2.png" class="rhombus-2">
+                <img src="./src/img/assets/rhombus-3.png" class="rhombus-3">
               </div>
             </div>
           </div>
@@ -158,9 +159,9 @@
                     <div class="title-ja">
                       <p>磨き続ける</p>
                     </div>
-                    <div class="rhombus-button-box">
-                        <button type=“button” onclick="location.href='https://shoma-yamamoto.netlify.app/'" class="rhombus-button">MORE</button>
-                    </div>
+                    <a href="#" class="rhombus-button-box">
+                      <div class="rhombus-button">MORE</div>
+                    </a>
                   </div>
                   <div class="desc-box">
                     <div class="desc-ja">
@@ -294,83 +295,16 @@
     })
   </script>
   <script>
-window.addEventListener('load', init);
- 
- function init() {
-     // レンダラーを作成
-     const renderer = new THREE.WebGLRenderer({
-         canvas: document.querySelector('#sphere'),
-         antialias: true
-     });
-     // シーンを作成
-     const scene = new THREE.Scene();
-  
-     // カメラを作成
-     const camera = new THREE.PerspectiveCamera(45, 1);
-     camera.fov = 60;
-     camera.position.set(0, 0, 1000);
-  
-     // Load GLTF or GLB
-     const loader = new THREE.GLTFLoader();
-     const url = './src/img/assets/sphere.gltf';
-  
-     let model = null;
-     loader.load(
-         url,
-         function (gltf) {
-             model = gltf.scene;
-             model.scale.set(100.0, 100.0, 100.0);
-             model.position.set(0, -300, 0);
-             //回転の調整
-             model.rotation.y = THREE.Math.DEG2RAD * -45;
-             scene.add(model);
-         },
-         function (error) {
-             console.log('An error happened');
-         }
-     );
-     //テクスチャをガンマ補正
-     renderer.gammaOutput = true;
-     renderer.gammaFactor = 2.2;
-  
-  
-     /* ライト追加
-     hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x4169e1, 1.8);
-     scene.add(hemisphereLight);*/
-  
-     // 初回実行
-     tick();
-     onResize();
-  
-     // リサイズイベント発生で実行
-     window.addEventListener('resize', onResize);
-  
-     function onResize() {
-         // サイズを取得
-         const w = window.innerWidth;
-         const h = window.innerHeight;
-         // 描画サイズ
-         renderer.setSize(w, h);
-         // ピクセル比
-         renderer.setPixelRatio(window.devicePixelRatio);
-         // 空間の背景色　//0xから始まる16進数の色コード
-         renderer.setClearColor(0x131313);
-  
-         // カメラのアスペクト比を正す
-         camera.aspect = w / h;
-         camera.updateProjectionMatrix();
-         console.log('h' + h + 'h' + h);
-  
-         // レンダリング
-         renderer.render(scene, camera);
-     }
-  
-     function tick() {
-         requestAnimationFrame(tick);
-         renderer.render(scene, camera);
-     }
-  
- }
+  $(function(){
+	$(".rhombus-button-box").on({
+  	'mouseenter':function(){
+  		$(".rhombus-2").addClass("rhombus-2-none")
+  	},
+  	'mouseleave':function(){
+  		$(".rhombus-2").removeClass("rhombus-2-none")
+  	}
+  });
+});
   </script>
 </body>
 

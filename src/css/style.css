@@ -59,14 +59,15 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   width: 100vw;
   height: auto;
   margin: auto;
-  background: #fffde8b3;
+  background: rgb(255,252,218);
+  background: linear-gradient(135deg, rgba(255,252,218,0.7) 0%, rgba(255,255,255,0.7) 100%);
   backdrop-filter: blur(5px);
 }
 .content-03{
   width: 100vw;
   height: 100vh;
   margin: auto;
-  background: #121212; 
+  background: #121212;
 }
 .content-menu {
   display: flex;
@@ -450,6 +451,39 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     width: 100%;
     max-width: 500px;
   }
+  .rhombus-switch{
+    position: relative;
+  }
+  .rhombus-switch img{
+    position: absolute;
+  }
+  .rhombus-switch .rhombus-2{
+    z-index: 1;
+    transition: ease-out .3s;
+  }
+  .rhombus-switch .rhombus-3{
+    z-index: 0;
+  }
+  .rhombus-button-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin-left: 16px;
+    text-decoration: none;
+    color: #121212;
+    border: solid #121212 1px;
+    padding-top: 4px;
+  }
+  .rhombus-button{
+    font-size: 16px;
+    font-family: 'SilkSerif-ExtraLight';
+  }
+  .rhombus-2-none{
+    opacity: 0;
+  }
   .content-02-right{
     display: flex;
     justify-content: center;
@@ -564,22 +598,14 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     letter-spacing: 0.1em;
     opacity: 0.4;
   }
-  .rhombus-button-box{
-    position: relative;
-    width: 100px;
-    height: 50px;
-    margin-left: 16px;
+  .content-works-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
   }
-  .rhombus-button{
-    position: absolute;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    font-family: 'SilkSerif-ExtraLight';
-    padding-top: 4px;
-    background: none;
-    border: solid #121212 1px;
+  .content-works-details:hover{
+    opacity: 1;
   }
 }
 
@@ -615,6 +641,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   animation: noise_anima 1s steps(12) infinite;
   z-index: 2;
   opacity: 0.5;
+  pointer-events: none;
 }
 @keyframes noise_anima {
 	from { background-position: 0 0; }
