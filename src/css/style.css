@@ -227,7 +227,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     align-items: center;
   }
   #sphere img{
-    width: 120vw;
+    width: 140vw;
   }
   .content-01 .content-menu li {
     display: flex;
