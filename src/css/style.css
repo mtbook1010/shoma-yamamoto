@@ -257,7 +257,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   .content-title {
     position: relative;
     width: 100vw;
-    margin-top: -5vw;
+    margin-top: -18px;
   }
   .content-title p{
     position: absolute;
@@ -265,7 +265,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     left: 0;
     width: 100%;
     font-family: 'SilkSerif-ExtraLight';
-    font-size: 18vw;
+    font-size: 64px;
     height: auto;
     white-space: nowrap;
     color: #121212;
@@ -285,11 +285,10 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     width: 100%;
   }
   .content-02-left{
-    margin: 80px 0;
+    margin: 120px 0 40px 0;
   }
   .content-02-left img{
-    width: 80%;
-    margin-top: 10vw;
+    width: 50%;
   }
   .content-02 .swiper-wrapper{
     max-width: 500px;
@@ -397,7 +396,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     flex-flow: column;
     width: 100%;
     height: auto;
-    padding: 0px 60px;
+    padding: 0px 30px;
   }
   .content-03 .content-title p{
     position: absolute;
