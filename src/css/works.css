@@ -127,6 +127,7 @@ body::-webkit-scrollbar {
   .content-desc-c{
     display: flex;
     column-gap: 12px;
+    font-size: 12px;
   }
 }
 
