@@ -49,7 +49,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   justify-content: center;
   padding: 60px;
   width: 100%;
-  max-width: 1440px;
+  max-width: 980px;
   height: calc(var(--vh, 1vh) * 100);
   margin: auto;
 }
@@ -78,7 +78,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   align-items: center;
   position: relative;
   width: 100%;
-  max-width: 1440px;
+  max-width: 980px;
   height: auto;
   z-index: 1;
 }
@@ -201,7 +201,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1440px;
+    max-width: 980px;
     height: 100%;
     margin: auto;
     padding: 20px 30px;
@@ -238,7 +238,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     list-style: none;
     font-family: 'SilkSerif-ExtraLight';
     font-weight: 400;
-    font-size: max(8vw, 42px);
+    font-size: 12vw;
     overflow: hidden;
   }
   .desc{
@@ -276,7 +276,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     display: flex;
     flex-flow: column;
     width: 100%;
-    max-width: 1440px;
+    max-width: 980px;
     border: solid #12121215;
     border-width: 0px 1px 0px 1px;
   }
@@ -290,7 +290,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     margin: 120px 0 40px 0;
   }
   .content-02-left img{
-    width: 50%;
+    width: 70vw;
   }
   .content-02 .swiper-wrapper{
     max-width: 500px;
@@ -372,7 +372,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     letter-spacing: 0.1em;
   }
   .swiper-container{
-    max-width: 1440px;
+    max-width: 980px;
   }
   .swiper-button-wrapper{
     position: relative;
@@ -416,7 +416,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     display: flex;
     flex-flow: column;
     width: 100%;
-    max-width: 1440px;
+    max-width: 980px;
     height: 100%;
     border: solid #FFFFFF15;
     border-width: 1px 1px 0px 1px;
@@ -438,7 +438,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
   .content-works-desc{
     font-family: 'VisueltPro-Light';
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.9;
     letter-spacing: 0.1em;
     opacity: 0.4;
@@ -541,7 +541,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     display: flex;
     flex-flow: column;
     width: 100%;
-    max-width: 1440px;
+    max-width: 980px;
     border: solid #12121215;
     border-width: 0px 1px 0px 1px;
   }
@@ -583,6 +583,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     width: 100px;
     height: 50px;
     margin-left: 16px;
+    margin-bottom: 12px;
     text-decoration: none;
     color: #121212;
     border: solid #121212 1px;
@@ -610,7 +611,6 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-bottom: min(2vw, 16px);
   }
   .title-box .title-en{
     font-family: 'SilkSerif-ExtraLight';
@@ -627,7 +627,6 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
   .desc-box{
     width: 100%;
-    margin-top: 20px;
     margin-right: 30px;
   }
   .desc-box .desc-ja{
@@ -639,7 +638,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     letter-spacing: 0.1em;
   }
   .swiper-container{
-    max-width: 1440px;
+    max-width: 980px;
   }
   .swiper-button-wrapper{
     position: relative;
@@ -683,7 +682,7 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     display: flex;
     flex-flow: column;
     width: 100%;
-    max-width: 1440px;
+    max-width: 980px;
     height: 100%;
     border: solid #FFFFFF15;
     border-width: 1px 1px 0px 1px;
@@ -721,16 +720,16 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   }
 }
 
-.content-menu-concept-br {
-  margin-top: -4vw;
+@media screen and (max-width: 699px) {
+  .content-menu-concept-br{
+    margin-top: -6vw;
+  }
 }
 
-@media screen and (min-width: 1440px) {
-
+@media screen and (min-width: 700px) {
   .content-menu-concept-br {
-    margin-top: -80px;
+    margin-top: max(-6vw, -80px);
   }
-  
 }
 
 .swiper-button {
