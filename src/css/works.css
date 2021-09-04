@@ -47,6 +47,8 @@
 
 .visuelt-l {
   font-family: 'VisueltPro-Light';
+  line-height: 1.9;
+  letter-spacing: 0.1em;
 }
 
 .yugothic {
@@ -89,15 +91,58 @@ body::-webkit-scrollbar {
   display: flex;
   height: auto;
   color: #ffffff;
-  font-family: 'SilkSerif-ExtraLight';
   font-weight: 400;
   font-size: min(10vw, 146px);
   line-height: 1.1;
   overflow: hidden;
-  margin-bottom: 8px;
 }
 
 .content-desc{
+  display: flex;
+  color: #ffffff;
+  column-gap: 64px;
+  margin-bottom: 36px;
+  font-size: 14px;
+}
+
+.content-desc-c{
+  display: flex;
+  column-gap: 12px;
+}
+
+@media screen and (max-width: 699px) {
+  .content-title {
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 14px;
+  }
+  
+  .content-desc{
+    flex-direction: column;
+    row-gap: 4px;
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+
+  .content-desc-c{
+    display: flex;
+    column-gap: 12px;
+  }
+}
+
+.content-desc-c:nth-child(1){
+  column-gap: 0px;
+}
+
+.content-desc-c span:nth-child(1){
+  opacity: 0.5;
+}
+
+.content-desc-c span:nth-child(2){
+  opacity: 1;
+}
+
+.content-body{
   width: 100%;
   height: auto;
   margin-bottom: 8px;
@@ -115,10 +160,15 @@ footer{
   width: 100%;
   height: auto;
   margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .content-works-back{
   transform: rotate(180deg);
+  opacity: 0.5;
+}
+.content-works-back:hover{
+  opacity: 1;
 }
 
 @media screen and (max-width: 699px) {
@@ -131,7 +181,7 @@ footer{
   display: flex;
   flex-flow: column;
   width: 100%;
-  height: 300vh;
+  height: auto;
   max-width: 1440px;
   border: solid #FFFFFF15;
   border-width: 0px 1px 0px 1px;
