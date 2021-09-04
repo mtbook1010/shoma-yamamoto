@@ -127,7 +127,6 @@ body::-webkit-scrollbar {
   .content-desc-c{
     display: flex;
     column-gap: 12px;
-    font-size: 12px;
   }
 }
 
@@ -147,6 +146,13 @@ body::-webkit-scrollbar {
   width: 100%;
   height: auto;
   margin-bottom: 8px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 699px) {
+  .content-body{
+    font-size: 12px;
+  }
 }
 
 .content-img{
