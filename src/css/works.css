@@ -94,7 +94,7 @@ body::-webkit-scrollbar {
   color: #ffffff;
   font-weight: 400;
   font-size: min(10vw, 146px);
-  line-height: 1.1;
+  line-height: 1.05;
   overflow: hidden;
 }
 
