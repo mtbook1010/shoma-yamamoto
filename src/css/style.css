@@ -234,7 +234,16 @@ body::-webkit-scrollbar {
   height: auto;
 }
 .content-works-details-yet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0.2;
+}
+
+@media screen and (max-width: 699px) {
+  .content-works-details-yet{
+    margin-left: 24px;
+  }
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -758,7 +767,7 @@ body::-webkit-scrollbar {
     letter-spacing: 0.1em;
     opacity: 0.4;
   }
-  .content-works-details {
+  .content-works-details{
     display: flex;
     justify-content: center;
     align-items: center;
