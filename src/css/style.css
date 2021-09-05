@@ -294,7 +294,7 @@ body::-webkit-scrollbar {
   .desc {
     margin-top: 20px;
     font-size: 14px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: YakuHanJP_Narrow, "Yu Gothic Medium", "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
     font-weight: 200;
     line-height: 1.9;
     letter-spacing: 0.1em;
@@ -401,7 +401,7 @@ body::-webkit-scrollbar {
   }
   .title-box .title-ja {
     display: none;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: YakuHanJP_Narrow, "Yu Gothic Medium", "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
     font-weight: 400;
     font-size: 12px;
     margin-left: 14px;
@@ -414,7 +414,7 @@ body::-webkit-scrollbar {
     margin-right: 30px;
   }
   .desc-box .desc-ja {
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: YakuHanJP_Narrow, "Yu Gothic Medium", "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
     font-weight: 200;
     font-size: 12px;
     color: #323232;
@@ -559,7 +559,7 @@ body::-webkit-scrollbar {
   .desc {
     margin-top: 20px;
     font-size: 24px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: YakuHanJP_Narrow, "Yu Gothic Medium", "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
     font-weight: 200;
     letter-spacing: 0.1em;
   }
@@ -667,7 +667,7 @@ body::-webkit-scrollbar {
   }
   .title-box .title-ja {
     display: none;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: YakuHanJP_Narrow, "Yu Gothic Medium", "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
     font-weight: 400;
     font-size: min(3vw, 15px);
     margin-left: 1vw;
@@ -679,7 +679,7 @@ body::-webkit-scrollbar {
     margin-right: 30px;
   }
   .desc-box .desc-ja {
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: YakuHanJP_Narrow, "Yu Gothic Medium", "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
     font-weight: 200;
     font-size: 14px;
     color: #323232;
