@@ -233,6 +233,9 @@ body::-webkit-scrollbar {
   align-items: center;
   height: auto;
 }
+.content-works-details-yet{
+  opacity: 0.2;
+}
 
 /*------------------------------------------------------------------------------------*/
 
