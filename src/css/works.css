@@ -74,6 +74,7 @@ br {
 }
 
 body {
+  display: none;
   background: #121212;
   overscroll-behavior-y: none;
   -ms-overflow-style: none;
