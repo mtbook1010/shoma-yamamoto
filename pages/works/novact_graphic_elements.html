@@ -39,7 +39,7 @@
   <div class="noise"></div>
   <main class="content">
     <div class="content-max-width">
-      <div class="content-title silkserif-el">novact Graphic Elements</div>
+      <div class="content-title silkserif-el"><span class="content-title-span">novact Graphic Elements</span></div>
       <div class="content-desc visuelt-l">
         <div class="content-desc-c content-desc-y">
           <span></span>
@@ -67,7 +67,7 @@
       <img src="../../src/img/works/novact-graphic-elements/novact-graphic-elements-04.webp" class="content-img">
       <p class="content-body yugothic p">*1：個と集のデザイン</p>
       <br>
-      <img src="../../src/img/works/novact-graphic-elements/novact-graphic-elements-02.webp" class="content-img">
+      <img src="../../src/img/works/novact-graphic-elements/novact-graphic-elements-05.webp" class="content-img">
       <br>
       <footer>
         <a href="javascript:history.back()"><img src="../../src/img/assets/arrow-right-icon.svg"
@@ -78,6 +78,13 @@
   <script>
     (function ($) {
       $('.top-page-head').on('inview', function () {
+        $(this).addClass('anim');
+      });
+    })(jQuery);
+  </script>
+    <script>
+    (function ($) {
+      $('.content-title-span').on('inview', function () {
         $(this).addClass('anim');
       });
     })(jQuery);

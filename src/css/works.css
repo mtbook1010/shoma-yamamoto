@@ -98,11 +98,26 @@ body::-webkit-scrollbar {
   display: flex;
   height: auto;
   color: #ffffff;
+  overflow: hidden;
+}
+
+.content-title-span{
   font-weight: 400;
   font-size: min(10vw, 146px);
   line-height: 1.05;
-  overflow: hidden;
 }
+
+/*
+.content-title-span{
+  transform: translate(0, 105%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.8s;
+  transition-delay: 0.2;
+}
+
+.content-title-span.anim {
+  transform: translate(0, 0);
+}
+*/
 
 .content-desc {
   display: flex;
