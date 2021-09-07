@@ -278,6 +278,7 @@ body::-webkit-scrollbar {
     height: 40px;
   }
   #sphere {
+    display: none;
     position: absolute;
     width: auto;
     z-index: -1;
@@ -543,6 +544,7 @@ body::-webkit-scrollbar {
     height: 50px;
   }
   #sphere {
+    display: none;
     position: absolute;
     width: auto;
     z-index: -1;

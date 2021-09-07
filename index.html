@@ -197,7 +197,8 @@
             <div class="content-works-desc">Sept. 2021 / BRANDING DESIGN</div>
           </div>
           <div class="content-works-details">
-            <a href="./pages/works/novact_graphic_elements.html"><img src="./src/img/assets/arrow-right-icon.svg" alt=""></a>
+            <a href="./pages/works/novact_graphic_elements.html"><img src="./src/img/assets/arrow-right-icon.svg"
+                alt=""></a>
           </div>
         </div>
         <!--section-->
@@ -246,14 +247,14 @@
   </div>
   <script>
     (function ($) {
-      $('.content-menu').on('inview', function () {
+      $('.content-menu').one('inview', function () {
         $(this).addClass('anim');
       });
     })(jQuery);
   </script>
   <script>
     (function ($) {
-      $('.top-page-head').on('inview', function () {
+      $('.top-page-head').one('inview', function () {
         $(this).addClass('anim');
       });
     })(jQuery);
@@ -325,7 +326,12 @@
   </script>
   <script>
     $(function () {
-      $('body').fadeIn(2000);
+      $('body').fadeIn(1500);
+    });
+  </script>
+  <script>
+    $(function () {
+      $('#sphere').delay(3020).fadeIn(1000);
     });
   </script>
 </body>
