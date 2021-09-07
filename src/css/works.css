@@ -24,12 +24,12 @@
 
 @font-face {
   font-family: 'SilkSerif-ExtraLight';
-  src: url('../font/SilkSerif/SilkSerif-ExtraLight.ttf') format('truetype')
+  src: url('../font/SilkSerif/SilkSerif-ExtraLight.otf') format('opentype')
 }
 
 @font-face {
   font-family: 'SilkSerif-LightItalic';
-  src: url('../font/SilkSerif/SilkSerif-LightItalic.ttf') format('truetype')
+  src: url('../font/SilkSerif/SilkSerif-LightItalic.otf') format('opentype')
 }
 
 @font-face {
