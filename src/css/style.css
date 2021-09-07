@@ -320,7 +320,7 @@ body::-webkit-scrollbar {
   .content-title {
     position: relative;
     width: 100vw;
-    margin-top: -18px;
+    margin-top: -21px;
   }
   .content-title p {
     position: absolute;
@@ -331,6 +331,7 @@ body::-webkit-scrollbar {
     font-size: 64px;
     height: auto;
     white-space: nowrap;
+    line-height: 1.6;
     color: #121212;
   }
   .content-02 .content-max-width {
@@ -585,7 +586,7 @@ body::-webkit-scrollbar {
   .content-title {
     position: relative;
     width: 100vw;
-    margin-top: max(-2.9vw, -41px);
+    margin-top: max(-3.25vw, -48px);
   }
   .content-02 .content-title p {
     position: absolute;
@@ -596,6 +597,7 @@ body::-webkit-scrollbar {
     font-size: min(10vw, 146px);
     height: auto;
     white-space: nowrap;
+    line-height: 1.6;
     color: #121212;
   }
   .content-02 .content-max-width {
