@@ -20,7 +20,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="../../src/js/jquery.inview.min.js"></script>
   <script src="../../src/js/luxy.js"></script>
-  <title>novact Graphic Elements｜Shoma Yamamoto</title>
+  <title>works-template｜Shoma Yamamoto</title>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
   <div class="noise"></div>
   <main class="content">
     <div class="content-max-width">
-      <div class="content-title silkserif-el">novact Graphic Elements</div>
+      <div class="content-title silkserif-el"><span class="content-title-span">novact graphic elements</span></div>
       <div class="content-desc visuelt-l">
         <div class="content-desc-c content-desc-y">
           <span></span>
@@ -47,27 +47,35 @@
         </div>
         <div class="content-desc-c content-desc-cl">
           <span>CLIENT</span>
-          <span>novact LLC<a href="https://novact.co.jp" target="_blank"><img src="../../src/img/assets/link-icon.svg" class="content-desc-cl-link"></a></span>
+          <span>novact LLC<a href="https://novact.co.jp" target="_blank"><img src="../../src/img/assets/link-icon.svg"
+                class="content-desc-cl-link"></a></span>
         </div>
         <div class="content-desc-c content-desc-po">
           <span>POSITION</span>
-          <span>Designer</span>
+          <span>Graphic Designer</span>
         </div>
       </div>
-      <img src="../../src/img/works/novact-graphic-elements/novact-graphic-elements-01.jpg" class="content-img">
+      <img src="../../src/img/works/novact-graphic-elements/novact-graphic-elements-01.webp" class="content-img">
       <p class="content-body yugothic p">
         novact LLCのグラフィックエレメントを作成しました。<br>ステイトメント：「＿づらいを＿やすいに」
       </p>
       <br>
-      <img src="../../src/img/works/novact-graphic-elements/novact-graphic-elements-03.jpg" class="content-img">
+      <img src="../../src/img/works/novact-graphic-elements/novact-graphic-elements-07.webp" class="content-img">
       <p class="content-body yugothic p">
-        <span class="bold">「づらい／やすい」</span><br>双方に共通しているのは「そこに『試み』が必要である」ということ。<br>試みないことが悪いとは断言しない。しかし、試みのその先にある「理想的な未来」の実現可能性を1%でも高くすることはお節介だろうか。<br>novactは0,100の善悪ではなく、実存する流動的な社会／世界のユーザ体験向上を「個と集のデザイン*1」というコンセプトを基に目指している。
+        <span
+          class="bold">Difficult(づらい)</span><br>Impossible ではなく Difficult であること。そこに改善の余地があること。「怪我してしまうほど鋭くないが、歪で扱いづらい」そんなイメージを表現したグラフィックです。
       </p>
       <br>
-      <img src="../../src/img/works/novact-graphic-elements/novact-graphic-elements-04.jpg" class="content-img">
+      <img src="../../src/img/works/novact-graphic-elements/novact-graphic-elements-08.webp" class="content-img">
+      <p class="content-body yugothic p">
+        <span
+          class="bold">Easy(やすい)</span><br>成功の確証はないし、「やすい」を試みる者に絶対の保護もない。しかし、試みる者には選択という名の「余白」を与えることができる。試みる者 と それを取り巻く全て とのインスタレーションをグラフィックで表現しました。
+      </p>
+      <br>
+      <img src="../../src/img/works/novact-graphic-elements/novact-graphic-elements-04.webp" class="content-img">
       <p class="content-body yugothic p">*1：個と集のデザイン</p>
       <br>
-      <img src="../../src/img/works/novact-graphic-elements/novact-graphic-elements-02.jpg" class="content-img">
+      <img src="../../src/img/works/novact-graphic-elements/novact-graphic-elements-05.webp" class="content-img">
       <br>
       <footer>
         <a href="javascript:history.back()"><img src="../../src/img/assets/arrow-right-icon.svg"
@@ -78,6 +86,13 @@
   <script>
     (function ($) {
       $('.top-page-head').on('inview', function () {
+        $(this).addClass('anim');
+      });
+    })(jQuery);
+  </script>
+  <script>
+    (function ($) {
+      $('.content-title-span').on('inview', function () {
         $(this).addClass('anim');
       });
     })(jQuery);
@@ -105,6 +120,11 @@
         wrapperSpeed: 0.07
       });
     }
+  </script>
+  <script>
+    $(function () {
+      $('body').fadeIn(1500);
+    });
   </script>
   <script>
     //ヘッダーの高さ分だけコンテンツを下げる
