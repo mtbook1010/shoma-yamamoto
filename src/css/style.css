@@ -247,6 +247,14 @@ body::-webkit-scrollbar {
   }
 }
 
+.content-02-divide .swiper-slide{
+}
+
+@media screen and (max-width: 699px) {
+  .content-02-divide .swiper-slide{
+  }
+}
+
 /*------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 699px) {
@@ -602,7 +610,7 @@ body::-webkit-scrollbar {
   }
   .content-02 .content-max-width {
     display: flex;
-    flex-flow: column;
+    flex-direction: row;
     width: 100%;
     max-width: 1440px;
     border: solid #12121215;
@@ -616,6 +624,7 @@ body::-webkit-scrollbar {
   }
   .content-02-left {
     margin-top: min(16vw, 240px);
+    margin-right: 48px;
     margin-bottom: 50px;
   }
   .content-02 .swiper-wrapper {
@@ -643,9 +652,10 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100px;
-    height: 50px;
-    margin-left: 16px;
+    width: 72px;
+    height: 36px;
+    margin-top: 2px;
+    margin-left: 24px;
     margin-bottom: 12px;
     text-decoration: none;
     color: #121212;
@@ -669,6 +679,7 @@ body::-webkit-scrollbar {
     display: block;
     width: 100%;
     height: auto;
+    margin-top: 44%;
   }
   .title-box {
     display: flex;
@@ -815,7 +826,7 @@ body::-webkit-scrollbar {
   background: url(../img/noise.png);
   animation: noise_anima 1s steps(12) infinite;
   z-index: 2;
-  opacity: 0.5;
+  opacity: 0.8;
   pointer-events: none;
 }
 
