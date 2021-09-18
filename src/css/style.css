@@ -323,33 +323,32 @@ body::-webkit-scrollbar {
     position: absolute;
     width: auto;
     top: 0;
-    font-family: 'SilkSerif-ExtraLight';
+    font-family: 'VisueltPro-Light';
     font-size: 64px;
     height: auto;
     white-space: nowrap;
     line-height: 1;
-    color: #121212;
+    color: #fff;
   }
   .content-title{
     width: 100vw;
   }
   .content-title._top{
     position: relative;
-    margin-top: -2px;
+    margin-top: -32px;
   }
   .content-title._bottom{
     position: absolute;
     height: 64px;
     right: 0;
     bottom: 0;
-    margin-bottom: -18px;
+    margin-bottom: -32px;
   }
   .content-02 .content-title._top p {
     left: 0;
   }
   .content-02 .content-title._bottom p {
     right: 0;
-    z-index: 999;
   }
   .content-02 .content-max-width {
     display: flex;
@@ -358,7 +357,7 @@ body::-webkit-scrollbar {
     max-width: 1440px;
     border: solid #12121215;
     border-width: 0px 1px 0px 1px;
-    padding-bottom: 60px;
+    padding-bottom: 32px;
   }
   .content-02-divide {
     display: flex;
@@ -500,6 +499,7 @@ body::-webkit-scrollbar {
     height: 100%;
     border: solid #FFFFFF15;
     border-width: 1px 1px 0px 1px;
+    padding-top: 32px;
     padding-bottom: min(16vw, 240px);
   }
   .content-works-container {
