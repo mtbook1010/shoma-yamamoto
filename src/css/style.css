@@ -339,9 +339,10 @@ body::-webkit-scrollbar {
   }
   .content-title._bottom{
     position: absolute;
+    height: 64px;
     right: 0;
     bottom: 0;
-    margin-bottom: 46px;
+    margin-bottom: -18px;
   }
   .content-02 .content-title._top p {
     left: 0;
