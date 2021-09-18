@@ -33,7 +33,7 @@
 }
 
 @font-face {
-  font-family: 'VisueltPro-Light';
+  font-family: "VisueltPro-Light";
   src: url('../font/VisueltPro/VisueltPro-Light.ttf') format('truetype')
 }
 
@@ -327,7 +327,7 @@ body::-webkit-scrollbar {
     position: absolute;
     width: auto;
     top: 0;
-    font-family: 'VisueltPro-Light';
+    font-family: "VisueltPro-Light",sans-serif;
     font-size: 64px;
     height: auto;
     white-space: nowrap;
@@ -357,6 +357,7 @@ body::-webkit-scrollbar {
   }
   .content-02 .content-max-width {
     display: flex;
+    position: relative;
     flex-flow: column;
     width: 100%;
     max-width: 1440px;
@@ -523,7 +524,7 @@ body::-webkit-scrollbar {
     line-height: 1.2;
   }
   .content-works-desc {
-    font-family: 'VisueltPro-Light';
+    font-family: "VisueltPro-Light",sans-serif;
     font-size: 12px;
     line-height: 1.9;
     letter-spacing: 0.1em;
@@ -624,7 +625,7 @@ body::-webkit-scrollbar {
     width: auto;
     top: 0;
     position: absolute;
-    font-family: 'VisueltPro-light';
+    font-family: "VisueltPro-light",sans-serif;
     font-size: min(9vw, 140px);
     height: auto;
     white-space: nowrap;
@@ -640,6 +641,7 @@ body::-webkit-scrollbar {
   }
   .content-02 .content-max-width {
     display: flex;
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -813,7 +815,7 @@ body::-webkit-scrollbar {
     font-size: 42px;
   }
   .content-works-desc {
-    font-family: 'VisueltPro-Light';
+    font-family: "VisueltPro-Light",sans-serif;
     font-size: 13px;
     line-height: 1.9;
     letter-spacing: 0.1em;
