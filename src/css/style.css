@@ -328,7 +328,8 @@ body::-webkit-scrollbar {
     height: auto;
     white-space: nowrap;
     line-height: 1;
-    color: #fff;
+    color: #ffffff00;
+    -webkit-text-stroke: 1px #ffffff;
   }
   .content-title{
     width: 100vw;
@@ -607,24 +608,25 @@ body::-webkit-scrollbar {
     width: 100vw;
   }
   .content-title._top{
-    margin-top: min(4.2vw, 65px);
+    margin-top: max(-4.2vw, -65px);
   }
   .content-title._bottom{
     position: absolute;
     right: 0;
     bottom: 0;
-    margin-bottom: min(2vw, 31px);
+    margin-bottom: min(4.2vw, 64px);
   }
   .content-02 .content-title p {
     width: auto;
     top: 0;
     position: absolute;
-    font-family: 'SilkSerif-ExtraLight';
+    font-family: 'VisueltPro-light';
     font-size: min(9vw, 140px);
     height: auto;
     white-space: nowrap;
-    line-height: 0;
-    color: #121212;
+    line-height: 1;
+    color: #ffffff00;
+    -webkit-text-stroke: 1px #ffffff;
   }
   .content-02 .content-title._top p {
     left: 0;
@@ -640,8 +642,8 @@ body::-webkit-scrollbar {
     column-gap: 64px;
     width: 100%;
     max-width: 1440px;
-    padding-top: min(16vw, 120px);
-    padding-bottom: min(32vw, 180px);
+    padding-top: min(16vw, 180px);
+    padding-bottom: min(32vw, 120px);
     border: solid #12121215;
     border-width: 0px 1px 0px 1px;
   }
@@ -789,6 +791,7 @@ body::-webkit-scrollbar {
     height: 100%;
     border: solid #FFFFFF15;
     border-width: 1px 1px 0px 1px;
+    padding-top: min(4.2vw, 64px);
     padding-bottom: min(16vw, 240px);
   }
   .content-works-container {
