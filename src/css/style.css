@@ -325,22 +325,34 @@ body::-webkit-scrollbar {
     width: 100%;
     padding: 0px 30px;
   }
-  .content-title {
-    position: relative;
-    width: 100vw;
-    margin-top: -21px;
-  }
   .content-title p {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
     font-family: 'SilkSerif-ExtraLight';
     font-size: 64px;
     height: auto;
     white-space: nowrap;
-    line-height: 1.6;
+    line-height: 0;
     color: #121212;
+  }
+  .content-title{
+    width: 100vw;
+  }
+  .content-title._top{
+    position: relative;
+    margin-top: 30px;
+  }
+  .content-title._bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 14px;
+  }
+  .content-02 .content-title._top p {
+    left: 0;
+  }
+  .content-02 .content-title._bottom p {
+    right: 0;
   }
   .content-02 .content-max-width {
     display: flex;
@@ -349,6 +361,7 @@ body::-webkit-scrollbar {
     max-width: 1440px;
     border: solid #12121215;
     border-width: 0px 1px 0px 1px;
+    padding-bottom: 80px;
   }
   .content-02-divide {
     display: flex;
@@ -357,7 +370,7 @@ body::-webkit-scrollbar {
     width: 100%;
   }
   .content-02-left {
-    margin: 120px 0 40px 0;
+    margin: 80px 0 40px 0;
   }
   .content-02-left img {
     width: 70vw;
@@ -594,25 +607,42 @@ body::-webkit-scrollbar {
   .content-title {
     position: relative;
     width: 100vw;
-    margin-top: max(-3.26vw, -48px);
+  }
+  .content-title._top{
+    margin-top: min(4.2vw, 65px);
+  }
+  .content-title._bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: min(2vw, 31px);
   }
   .content-02 .content-title p {
-    position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    position: absolute;
     font-family: 'SilkSerif-ExtraLight';
-    font-size: min(10vw, 146px);
+    font-size: min(9vw, 140px);
     height: auto;
     white-space: nowrap;
-    line-height: 1.6;
+    line-height: 0;
     color: #121212;
+  }
+  .content-02 .content-title._top p {
+    left: 0;
+  }
+  .content-02 .content-title._bottom p {
+    right: 0;
   }
   .content-02 .content-max-width {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 64px;
     width: 100%;
     max-width: 1440px;
+    padding-top: min(16vw, 120px);
+    padding-bottom: min(32vw, 180px);
     border: solid #12121215;
     border-width: 0px 1px 0px 1px;
   }
@@ -623,9 +653,7 @@ body::-webkit-scrollbar {
     width: 100%;
   }
   .content-02-left {
-    margin-top: min(16vw, 240px);
-    margin-right: 48px;
-    margin-bottom: 50px;
+    width: auto;
   }
   .content-02 .swiper-wrapper {
     max-width: 500px;
@@ -671,15 +699,17 @@ body::-webkit-scrollbar {
   }
   .content-02-right {
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
+    min-width: 500px;
   }
   .content-02-right-box {
     display: block;
     width: 100%;
     height: auto;
-    margin-top: 44%;
+    margin-bottom: -124px;
   }
   .title-box {
     display: flex;
