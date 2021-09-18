@@ -356,7 +356,7 @@ body::-webkit-scrollbar {
     max-width: 1440px;
     border: solid #12121215;
     border-width: 0px 1px 0px 1px;
-    padding-bottom: 80px;
+    padding-bottom: 800px;
   }
   .content-02-divide {
     display: flex;
