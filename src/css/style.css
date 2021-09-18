@@ -343,6 +343,7 @@ body::-webkit-scrollbar {
     right: 0;
     bottom: 0;
     margin-bottom: -18px;
+    z-index: 999;
   }
   .content-02 .content-title._top p {
     left: 0;
