@@ -333,7 +333,7 @@ body::-webkit-scrollbar {
     white-space: nowrap;
     line-height: 1;
     color: #ffffff00;
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 0.5px #ffffff;
   }
   .content-title{
     width: 100vw;
@@ -648,8 +648,8 @@ body::-webkit-scrollbar {
     column-gap: 64px;
     width: 100%;
     max-width: 1440px;
-    padding-top: min(16vw, 180px);
-    padding-bottom: min(32vw, 120px);
+    padding-top: min(32vw, 180px);
+    padding-bottom: min(32vw, 180px);
     border: solid #12121215;
     border-width: 0px 1px 0px 1px;
   }
