@@ -327,6 +327,7 @@ body::-webkit-scrollbar {
   }
   .content-title p {
     position: absolute;
+    width: auto;
     top: 0;
     font-family: 'SilkSerif-ExtraLight';
     font-size: 64px;
@@ -618,6 +619,7 @@ body::-webkit-scrollbar {
     margin-bottom: min(2vw, 31px);
   }
   .content-02 .content-title p {
+    width: auto;
     top: 0;
     position: absolute;
     font-family: 'SilkSerif-ExtraLight';
