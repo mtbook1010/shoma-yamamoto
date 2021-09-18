@@ -343,13 +343,13 @@ body::-webkit-scrollbar {
     right: 0;
     bottom: 0;
     margin-bottom: -18px;
-    z-index: 999;
   }
   .content-02 .content-title._top p {
     left: 0;
   }
   .content-02 .content-title._bottom p {
     right: 0;
+    z-index: 999;
   }
   .content-02 .content-max-width {
     display: flex;
@@ -358,7 +358,7 @@ body::-webkit-scrollbar {
     max-width: 1440px;
     border: solid #12121215;
     border-width: 0px 1px 0px 1px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
   .content-02-divide {
     display: flex;
@@ -515,6 +515,7 @@ body::-webkit-scrollbar {
   .content-works-title {
     font-family: 'SilkSerif-ExtraLight';
     font-size: 36px;
+    line-height: 1.2;
   }
   .content-works-desc {
     font-family: 'VisueltPro-Light';
