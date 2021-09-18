@@ -64,7 +64,6 @@ body::-webkit-scrollbar {
   padding: 60px;
   width: 100%;
   max-width: 1440px;
-  height: calc(var(--vh, 1vh) * 100);
   margin: auto;
 }
 

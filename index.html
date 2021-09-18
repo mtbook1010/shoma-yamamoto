@@ -98,8 +98,7 @@
       </div>
     </div>
     <div class="content content-02">
-      <div class="content-title _top luxy-el" data-horizontal="1" data-speed-x="-25"
-        data-speed-y="0">
+      <div class="content-title _top luxy-el" data-horizontal="1" data-speed-x="-25" data-speed-y="0">
         <p>What I think about design What I think about design What I think about design</p>
       </div>
       <div class="content-max-width">
@@ -187,8 +186,7 @@
             </div>
           </div>
         </div>
-        <div class="content-title _bottom luxy-el" data-horizontal="1" data-speed-x="25"
-          data-speed-y="0">
+        <div class="content-title _bottom luxy-el" data-horizontal="1" data-speed-x="25" data-speed-y="0">
           <p>What I think about design What I think about design What I think about design</p>
         </div>
       </div>
@@ -332,18 +330,13 @@
   <script>
     $(function () {
       $('body').fadeIn(1500);
+      $('#sphere').delay(3020).fadeIn(1000);
+      $('.content-title').delay(3020).fadeIn(1000);
     });
   </script>
   <script>
-    $(function () {
-      $('#sphere').delay(3020).fadeIn(1000);
-    });
+    $('.content-01').css('height',$(window).height());
   </script>
-    <script>
-      $(function () {
-        $('.content-title').delay(3020).fadeIn(1000);
-      });
-    </script>
 </body>
 
 </html>
