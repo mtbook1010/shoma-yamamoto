@@ -98,10 +98,10 @@
       </div>
     </div>
     <div class="content content-02">
-      <div class="content-title _top luxy-el" data-horizontal="1" data-speed-x="-25" data-speed-y="0">
-        <p>What I think about design What I think about design What I think about design</p>
-      </div>
       <div class="content-max-width">
+        <div class="content-title _top luxy-el" data-horizontal="1" data-speed-x="-25" data-speed-y="0">
+          <p>What I think about design What I think about design What I think about design</p>
+        </div>
         <div class="content-02-divide content-02-left">
           <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -335,7 +335,8 @@
     });
   </script>
   <script>
-    $('.content-01').css('height',$(window).height());
+    var height=window.innerHeight;
+    document.documentElement.style.setProperty( '--vh', height/100 + 'px');
   </script>
 </body>
 
