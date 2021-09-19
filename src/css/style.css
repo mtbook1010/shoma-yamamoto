@@ -335,14 +335,16 @@ body::-webkit-scrollbar {
     -webkit-text-stroke: 0.5px #ffffff;
   }
   .content-title {
+    position: absolute;
     width: 100vw;
   }
   .content-title._top {
-    position: relative;
+    top: 0;
+    left: 0;
     margin-top: -32px;
+    margin-left: calc(50% - 50vw);
   }
   .content-title._bottom {
-    position: absolute;
     height: 64px;
     right: 0;
     bottom: 0;
