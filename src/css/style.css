@@ -252,6 +252,38 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.content-scroll-icon-wrapper{
+  display: none;
+  position: absolute;
+}
+.content-scroll-icon {
+  display: flex;
+  flex-direction: column;
+}
+.content-scroll-icon :nth-child(1){
+  animation-delay: 0.2s !important;
+  animation: flash 2s linear infinite;
+}
+.content-scroll-icon :nth-child(2){
+  animation-delay: 0.6s !important;
+  animation: flash 2s linear infinite;
+}
+.content-scroll-icon :nth-child(3){
+  animation-delay: 1s !important;
+  animation: flash 2s linear infinite;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 699px) {
@@ -314,6 +346,16 @@ body::-webkit-scrollbar {
     font-weight: 200;
     line-height: 1.9;
     letter-spacing: 0.1em;
+  }
+  .content-scroll-icon-wrapper{
+    top: 70vh;
+  }
+  .content-scroll-icon {
+    row-gap: 16px;
+  }
+  .content-scroll-icon img{
+    width: 13px;
+    height: auto;
   }
   .content-02, .content-03 {
     display: flex;
@@ -601,6 +643,12 @@ body::-webkit-scrollbar {
     font-family: YakuHanJP_Narrow, "Yu Gothic Medium", "Yu Gothic", YuGothic, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
     font-weight: 200;
     letter-spacing: 0.1em;
+  }
+  .content-scroll-icon-wrapper{
+    right: 72px;
+  }
+  .content-scroll-icon {
+    row-gap: 32px;
   }
   .content-02 {
     display: flex;
