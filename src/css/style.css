@@ -64,7 +64,7 @@ body::-webkit-scrollbar {
   padding: 60px;
   width: 100%;
   max-width: 1440px;
-  height: calc( var(--vh) * 100 );
+  height: calc( var(--vh) * 100);
   margin: auto;
 }
 
@@ -633,7 +633,7 @@ body::-webkit-scrollbar {
     white-space: nowrap;
     line-height: 1;
     color: #ffffff00;
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 0.5px #ffffff;
   }
   .content-02 .content-title._top p {
     left: 0;
