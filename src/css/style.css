@@ -645,10 +645,14 @@ body::-webkit-scrollbar {
     letter-spacing: 0.1em;
   }
   .content-scroll-icon-wrapper{
-    right: 72px;
+    right: 79px;
   }
   .content-scroll-icon {
-    row-gap: 32px;
+    row-gap: 16px;
+  }
+  .content-scroll-icon img{
+    width: 13px;
+    height: auto;
   }
   .content-02 {
     display: flex;
