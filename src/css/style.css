@@ -747,15 +747,15 @@ body::-webkit-scrollbar {
     height: 36px;
     margin-top: 2px;
     margin-left: 24px;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     text-decoration: none;
     color: #121212;
     border: solid #121212 1px;
-    padding-top: 4px;
   }
   .rhombus-button {
     font-size: 16px;
     font-family: 'SilkSerif-ExtraLight';
+    margin-bottom: -2.4px;
   }
   .rhombus-2-none {
     opacity: 0;
@@ -778,10 +778,12 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: left;
     align-items: center;
+    height: 80px;
   }
   .title-box .title-en {
     font-family: 'SilkSerif-ExtraLight';
     font-size: 42px;
+    margin-bottom: -8px;
   }
   .title-box .title-ja {
     display: none;
