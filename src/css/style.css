@@ -52,6 +52,20 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.bg-black{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #121212;
+  z-index: 996;
+  transition: 1.5s;
+  opacity: 1;
+}
+
+.bg-black._none{
+  opacity: 0;
+}
+
 #container {
   width: 100vw;
   height: 300vh;
@@ -96,7 +110,7 @@ body::-webkit-scrollbar {
   width: 100%;
   max-width: 1440px;
   height: auto;
-  z-index: 1;
+  z-index: 997;
 }
 
 .content-menu a {
@@ -248,12 +262,7 @@ body::-webkit-scrollbar {
   }
 }
 
-.content-title {
-  display: none;
-}
-
 .content-scroll-icon-wrapper{
-  display: none;
   position: absolute;
 }
 .content-scroll-icon {
@@ -315,7 +324,6 @@ body::-webkit-scrollbar {
     height: 40px;
   }
   #sphere {
-    display: none;
     position: absolute;
     width: auto;
     z-index: -1;
@@ -613,7 +621,6 @@ body::-webkit-scrollbar {
     height: 50px;
   }
   #sphere {
-    display: none;
     position: absolute;
     width: auto;
     z-index: -1;

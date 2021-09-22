@@ -39,6 +39,7 @@
   <div id="luxy">
     <div class="content content-01">
       <div class="noise"></div>
+      <div class="bg-black"></div>
       <ul class="content-menu">
         <li class="content-menu-concept">
           <span>N</span>
@@ -337,14 +338,14 @@
   <script>
     $(function () {
       $('body').fadeIn(1500);
-      $('#sphere').delay(3020).fadeIn(1000);
-      $('.content-title').delay(3020).fadeIn(1000);
-      $('.content-scroll-icon-wrapper').delay(3020).fadeIn(1000);
+      $('.bg-black').delay(3020).queue(function () {
+        $(this).addClass('_none');
+      })
     });
   </script>
   <script>
-    var height=window.innerHeight;
-    document.documentElement.style.setProperty( '--vh', height/100 + 'px');
+    var height = window.innerHeight;
+    document.documentElement.style.setProperty('--vh', height / 100 + 'px');
   </script>
 </body>
 
