@@ -449,17 +449,19 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100px;
-    height: 50px;
+    width: auto;
+    height: auto;
+    padding: 14px 8px 10px 8px;
     margin-left: 16px;
     text-decoration: none;
     color: #121212;
     border: solid #121212 1px;
-    padding-top: 4px;
   }
   .rhombus-button {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1;
     font-family: 'SilkSerif-ExtraLight';
+    white-space: nowrap;
   }
   .rhombus-2-none {
     opacity: 0;
