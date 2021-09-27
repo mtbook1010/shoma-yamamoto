@@ -713,8 +713,8 @@ body::-webkit-scrollbar {
     column-gap: 64px;
     width: 100%;
     max-width: 1440px;
-    padding-top: min(32vw, 180px);
-    padding-bottom: min(32vw, 180px);
+    padding-top: min(32vw, 40px);
+    padding-bottom: min(32vw, 40px);
     border: solid #12121215;
     border-width: 0px 1px 0px 1px;
   }
@@ -782,7 +782,6 @@ body::-webkit-scrollbar {
     display: block;
     width: 100%;
     height: auto;
-    margin-bottom: -124px;
   }
   .title-box {
     display: flex;
@@ -897,6 +896,17 @@ body::-webkit-scrollbar {
   }
   .content-works-details:hover {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width:699px) and (max-width:1185px) {
+  .content-02-right-box {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width:1186px) {
+  .content-02-right-box {
+    margin-top: 124px;
   }
 }
 
