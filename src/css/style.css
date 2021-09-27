@@ -356,7 +356,7 @@ body::-webkit-scrollbar {
     letter-spacing: 0.1em;
   }
   .content-scroll-icon-wrapper{
-    top: 70vh;
+    top: 65vh;
   }
   .content-scroll-icon {
     row-gap: 16px;
